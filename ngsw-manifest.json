@@ -1,0 +1,39 @@
+{
+  "static": {
+    "urls": {
+      "/0.e1f45700e771b25d75be.chunk.js": "4dcc8e0378cfaa69d998489ee9e6411e73897156",
+      "/1.9d87db17c7b2c4c70121.chunk.js": "a9ac62529586fb40361d00d3c5de01f5b9eeabe4",
+      "/main.d8565e43697fa9ec3bc4.bundle.js": "888ee509ddedebae48ad26859b1002448a17c58c",
+      "/polyfills.eb4dbaa89de9c34fc3c4.bundle.js": "47ac6b3cf67fa3be47eaa30e28d53d20dbc2d53b",
+      "/sw-register.d02a261dd2b31ab45198.bundle.js": "1ae5020d250db3f6750ec4977de8b684281d533e",
+      "/inline.31d246580a8a57e3373d.bundle.js": "47c40eb2c791d26b4033e53572c546a459ae9608",
+      "/styles.0a58e1305b009a3c8ab7.bundle.css": "e2de113d54f8d76418bda2757cb16983405e4b8e",
+      "/assets/favicons/android-chrome-512x512.png": "b78c8bbc0811fa5c3a06072aa01b3c763e949383",
+      "/assets/favicons/android-chrome-192x192.png": "759119097148073eb13ded46ef1b6e4ac3dd66bc",
+      "/assets/favicons/apple-touch-icon-114x114.png": "05750785e41371aba6be53cdf5c8e789ddd21d47",
+      "/assets/favicons/apple-touch-icon-120x120.png": "618f5a9d11b2388b07ca1434aa843ca3b6892d54",
+      "/assets/favicons/apple-touch-icon-144x144.png": "2986d0bdea86521c05bbf0a0261c828bba7d7b58",
+      "/assets/favicons/apple-touch-icon-152x152.png": "86f3335fef95f277dce3af8a41205a7d25008ae1",
+      "/assets/favicons/apple-touch-icon-180x180.png": "2be9b18d38d8e1b5e05630d3483374b3fea5f29a",
+      "/assets/favicons/apple-touch-icon-57x57.png": "e991697692145a6e910024c401eef57b7fc7d51a",
+      "/assets/favicons/apple-touch-icon-60x60.png": "07866ae501ecefa6ecfa1c31cecf414ab6f0654b",
+      "/assets/favicons/apple-touch-icon-72x72.png": "223e2c0219b757609f9d0309610db855038eecba",
+      "/assets/favicons/apple-touch-icon-76x76.png": "431305b317016103c0110b76e500bef04ee572ce",
+      "/assets/favicons/apple-touch-icon.png": "5fb89f9bba2f6a4a803df03574fba5819c4817a6",
+      "/assets/favicons/browserconfig.xml": "7a6897d982777d090dbff6859eb25c80671d8cb6",
+      "/assets/favicons/favicon-16x16.png": "5f9e5dff477dd997138f4bd60e609160ad6ad2e0",
+      "/assets/favicons/favicon-32x32.png": "0c88f5b06097669996c2afbe28d83f911695d7b4",
+      "/assets/favicons/favicon.ico": "171c9131447b14bbcc2ee1c81d45e5118dcd9d03",
+      "/assets/favicons/manifest.json": "c6dbf1148f26817c02dbac46684edcab94893bcc",
+      "/assets/favicons/mstile-144x144.png": "44f6c14b20f1763c5516160ecd0cb48b1619766d",
+      "/assets/favicons/mstile-150x150.png": "0f19afc2ab84921bd21ad8ac5296cb7bfc428355",
+      "/assets/favicons/mstile-310x150.png": "cfa25b930dbf53c6fbbd5a3ddb83b68a69e0dbc8",
+      "/assets/favicons/mstile-310x310.png": "3d27fde2331c9f96d08ef755200f8e9b4a8629ce",
+      "/assets/favicons/mstile-70x70.png": "7e1f5e467b9ddf61c3b91ea861fe5cbff7fb8a53",
+      "/assets/favicons/safari-pinned-tab.svg": "3d75761d0f1a3c7cefed54178de78ddc95ec3bb8",
+      "/assets/images/gitee-logo.svg": "04c891c87f6849e9934fe6271ef077789eddab3c",
+      "/index.html": "4d08452338dc24399c2535b7a6577636a5833e1a"
+    },
+    "_generatedFromWebpack": true
+  }
+}
