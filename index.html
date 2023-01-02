@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="">
-
+    <head runat="server">
+        <title>Untitled Page</title>
+        <script type="text/javascript">
+        function finished(){
+        var targelem = document.getElementById('loader');
+        targelem.style.display='none';
+        targelem.style.visibility='hidden';
+        document.loading
+        }
+        </script>
+    </head>
+    <body οnlοad="finished();">
+        <form id="form1" runat="server">
+            <div id="loader">
+                    <div align="center">页面正在加载中...</div>
+            </div>
+        </form>
+    </body>
+    </html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- 浏览器标签上显示的网站标题 -->
-    <title><p id="hitokoto">加载中</p> - Xzai</title>
+    <title id="hitokoto">Xzaiの个人主页</title>
     <!-- 网站介绍 -->
     <meta name="description" content="Xzaiの个人主页">
     <!-- 网站关键字 -->
@@ -62,7 +80,7 @@
             <div class="col-lg-4 photo-bg"></div>
             <div class="col-lg-8 card">
                 <!-- 大标题 -->
-                <h1>Xzai</h1>
+                <h1>Xzaiの个人主页</h1>
                 <!-- 标题下的一段话 -->
                 <p>
                     很荣幸您能访问我的网站！ 目前我仍在学习中，每天抽出时间来看书学习，励志成为一个技术很牛的程序员。
