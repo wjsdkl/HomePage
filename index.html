@@ -45,6 +45,16 @@
         // TODO 一言设置
     </script>
     <!-- end 自定义设置 -->
+    //页面加载完毕再显示页面
+    <script>
+    document.onreadystatechange = function () {
+                if (document.readyState == "complete") {
+                    document.body.style.display = "block";
+                } else {
+                    document.body.style.display = "none";
+                };
+            };
+    </script>
 </head>
 
 <body>
@@ -58,7 +68,7 @@
                 <p>
                     很荣幸您能访问我的网站！ 目前我仍在学习中，每天抽出时间来看书学习，励志成为一个技术很牛的程序员。
                 </p>
-                <p id="hitokoto_text">&nbsp;</p>
+                <p id="hitokoto">&nbsp;</p>
                 <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
                 <div class="container-fluid">
                     <div class="row">
