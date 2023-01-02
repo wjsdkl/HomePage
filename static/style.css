@@ -1,5 +1,8 @@
-body {
+*{
     transition: 2s;
+}
+
+body {
     font-size: 18px;
     color: #6c767d;
     background-color: #ebf1f5;
