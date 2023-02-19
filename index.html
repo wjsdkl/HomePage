@@ -1,133 +1,511 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- 浏览器标签上显示的网站标题 -->
-    <title>Xzaiの个人主页</title>
-    <!-- 网站介绍 -->
-    <meta name="description" content="Xzaiの个人主页">
-    <!-- 网站关键字 -->
-    <meta name="keywords" content="Xzai,个人主页,程序员">
-    <!-- 浏览器标签上显示的图标 -->
-    <link rel="icon" type="image/ico" href="//sdn.geekzu.org/avatar/4cc893d113dd74ceca73f9863f2c5446/">
-    <!-- 样式文件 -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="./static/style.css?v=1.1">
-    <link rel="stylesheet" href="./static/APlayer-1.10.1/dist/APlayer.min.css">
+  <title>Katorly</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 自定义设置 -->
-    <style>
-        body {
-            /*背景图片URL 可使用随机图片API */
-            background-image: url("https://bu.dusays.com/2022/06/04/629b0a2a89425.png");
-        }
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-        .photo-bg {
-            /* 卡片左侧图片 */
-            background-image: url("https://bu.dusays.com/2022/06/04/629b0a2750921.jpg");
-        }
-    </style>
-    <script>
-        // 音乐设置
-        let meting_music_api = "https://api.mizore.cn/meting/api.php";// meting api
-        let music_server = "netease"; // 音乐服务：网易云 netease 参见 meting api支持的服务
-        let music_type = "playlist"; // 歌曲类型：歌单playlist 单首歌曲 song  专辑 album
-        let music_id = "691438160"; // 歌单ID或歌曲ID或者专辑ID 20173709 29732992
-        let music_order = "list"; // 音频循环顺序, 顺序播放： 'list', 随机播放：'random'
-        let music_mini = false; // mini模式 吸底模式开启后此选项实效 true / false
-        let music_fixed = false; // 吸底模式
-        let music_volume = 0.3; // 默认音量
-        let music_autoplay = false; // 自动播放
-        let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
-        // TODO 一言设置
-    </script>
-    <!-- end 自定义设置 -->
-    <script>
-        document.onreadystatechange = function () {
-            if (document.readyState == "complete") {
-                document.body.style.display = "block";
-            } else {
-                document.body.style.display = "none";
-            };
-        };
-    </script>
+  <!-- CACHE -->
+  <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="main" class="container">
-        <div class="row my-card justify-content-center">
-            <div class="col-lg-4 photo-bg"></div>
-            <div class="col-lg-8 card">
-                <!-- 大标题 -->
-                <h1>Xzaiの个人主页</h1>
-                <!-- 标题下的一段话 -->
-                <p>
-                    很荣幸您能访问我的网站！ 目前我仍在学习中，每天抽出时间来看书学习，励志成为一个很6的程序员。
-                </p>
-                <p id="hitokoto">&nbsp;</p>
-                <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-                <!-- <div class="container-fluid"> -->
-                    <!-- <div class="row"> -->
-                        <!-- 导航按钮组 -->
-                        <!-- <button data-href="//xzai.cloud" data-title="Blog" data-window="pop" data-anim="4" -->
-                            <!-- data-area-w="80%" data-area-h="90%" data-shade="false" -->
-                            <!-- class="kz-nav-btn btn btn-primary col-lg-4">个人博客（未完成）</button> -->
-
-                        <!-- <button data-href="https://github.com/XzaiCloud" data-title="GitHub" data-window="newtab" -->
-                            <!-- data-anim="4" data-area-w="80%" data-area-h="90%" data-shade="false" -->
-                            <!-- class="kz-nav-btn btn btn-secondary col-lg-4">GitHub地址</button> -->
-
-                        <!-- <button data-href="mailto:xzai@xzai.cloud" data-title="Github" data-window="newtab" -->
-                            <!-- data-anim="4" data-area-w="80%" data-area-h="90%" data-shade="false" -->
-                            <!-- class="kz-nav-btn btn btn-success col-lg-4">给我发邮件</button> -->
-
-                        <!-- end 导航按钮组 -->
-                    <!-- </div> -->
-                <!-- </div> -->
-                <!-- aplayer inner -->
-                <div id="aplayer-inner" class="aplayer"></div>
-                <!-- end aplayer inner -->
-                <ul class="social mt-1">
-                    <!-- <li><a href="https://weibo.com/u/5223004318"><i class="fab fa-weibo " aria-hidden="true"></i></a> -->
-                    <!-- </li> -->
-                    <li><a href="https://github.com/XzaiCloud" target="_blank"><i class="fab fa-github"
-                                aria-hidden="true"></i></a></li>
-                    <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2744601427&site=qq&menu=yes" target="_blank"><i
-                                class="fab fa-qq" aria-hidden="true"></i></a></li>
-                    <!-- <li><a href="#"><i class="fab fa-telegram" aria-hidden="true"></i></a></li> -->
-                    <!-- <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li> -->
-                    <!-- <li><a href="https://www.zhihu.com/people/kaygb/"><i class="fab fa-zhihu" -->
-                    <!-- aria-hidden="true"></i></a></li> -->
-                </ul>
-
-                <footer>
-                    <p>Copyright Xzai
-                        <a href="https:////beian.miit.gov.cn/" target="_blank">蜀ICP备2022010825号-1</a>
-                        <!-- <br>Mod by -->
-                        <!-- <a href="https://github.com/XzaiCloud" target="_blank" rel="">Xzai</a> -->
-                        <!-- <a href="https://console.upyun.com/register/?invite=r1FdZxBoH" target="_blank" -->
-                        <!-- rel="nofollow"><img src="https://bu.dusays.com/2021/12/15/9991d2344d2ca.png" -->
-                        <!-- style="width:50px;"></a> -->
-                    </p>
-                </footer>
-            </div>
+  <!-- MAIN -->
+  <main>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <!-- Information -->
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/katorly.webp">
+            <source type="image/jpeg" srcset="./assets/img/katorly.png">
+            <img src="./assets/img/katorly.png" alt="Katorly" width="80">
+          </picture>
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Katorly">Xzai</h1>
+          <p class="title" i18n>Developer//开发者</p>
         </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span><i class="bi bi-plus"></i>&nbsp;<text i18n>Show Contacts//联系方式</text></span>
+        </button>
+      </div>
 
+      <!-- Contacts -->
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Email//邮箱</p>
+              <a href="mailto:xzai0313@qq.com" class="contact-link">xzai0313@qq.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-chat-left-dots"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Gitter//聊天室</p>
+              <a href="https://matrix.to/#/#XzaiCloud:gitter.im" class="contact-link" target="_blank">XzaiCloud</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-clock"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Timezone//时区</p>
+              <time datetime="1982-06-23">UTC +08:00</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-translate"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Language//语言</p>
+              <address>zh-CN</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- Social -->
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/XzaiCloud" class="social-link" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/CloudXzai" class="social-link" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a class="social-link" target="_blank">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://afdian.net/a/CN-2B2T" class="social-link" target="_blank">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Photos</button>
+          </li>
+
+          <li class="navbar-item">
+            <a class="navbar-link" target="_blank">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <togglelang class="navbar-link bi bi-translate"></togglelang>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- About -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title" i18n>About me//关于我</h2>
+        </header>
+        <section class="about-text">
+          <p i18n>
+            My name is Xzai.//我是 Xzai.
+          </p>
+          <p>
+            <span i18n>I'm a Minecraft player who loves playing multiplayer and is fond of making server plugins. I have
+              developed
+              a hobby of making Minecraft server plugins over the past several years, and also help translate plugins
+              into Chinese (Simplified).//我是一名喜欢游玩服务器并且以开发服务端插件为乐的 Minecraft 玩家。前几年我养成了开发 Minecraft
+              服务的插件的兴趣，并帮助翻译多个插件至简体中文。</span><br>
+            <span i18n>Feel free to ask me questions about Minecraft server setup making.&#x1F604;//欢迎问我 Minecraft
+              服务的制作相关的问题。&#x1F604;</span>
+          </p>
+          <p>
+            <text i18n>Most of my projects are in //我大部分的项目都在 </text><a href="https://github.com/XzaiCloud" class="link"
+              target="_blank">XzaiCloud</a><text i18n>. Everyone is welcome to join the lab and make contributions.// 中。欢迎所有人加入并作出贡献。</text>
+          </p>
+        </section>
+
+        <!-- Doing -->
+        <section class="service">
+          <h3 class="h3 service-title" i18n>My hobbies//兴趣爱好</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <picture>
+                  <source type="image/webp" srcset="./assets/img/icon-learning.webp">
+                  <source type="image/jpeg" srcset="./assets/img/icon-learning.png">
+                  <img src="./assets/img/icon-learning.png" alt="Learing" width="40">
+                </picture>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" i18n>Learing//学</h4>
+                <p class="service-item-text" i18n>
+                  One is never too old to learn. Learning will become fun.//生命不息，奋斗不止。
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <picture>
+                  <source type="image/webp" srcset="./assets/img/icon-coding.webp">
+                  <source type="image/jpeg" srcset="./assets/img/icon-coding.png">
+                  <img src="./assets/img/icon-coding.png" alt="Coding" width="40">
+                </picture>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" i18n>Coding//敲代码</h4>
+                <p class="service-item-text" i18n>
+                  Write code all my life, no matter rain or sunshine.//人生苦短，我用____。
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <picture>
+                  <source type="image/webp" srcset="./assets/img/icon-drawing.webp">
+                  <source type="image/jpeg" srcset="./assets/img/icon-drawing.png">
+                  <img src="./assets/img/icon-drawing.png" alt="Drawing" width="40">
+                </picture>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" i18n>Drawing//绘图</h4>
+                <p class="service-item-text" i18n>
+                  Get inspired by my everyday life. Can't help but recording it.//已摒弃的爱好。
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <picture>
+                  <source type="image/webp" srcset="./assets/img/icon-photographing.webp">
+                  <source type="image/jpeg" srcset="./assets/img/icon-photographing.png">
+                  <img src="./assets/img/icon-photographing.png" alt="Drawing" width="40">
+                </picture>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" i18n>Photographing//摄影</h4>
+                <p class="service-item-text" i18n>
+                  Always fascinated by the magnificent scenery of the natural world.//记录生活点滴。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- DO NOT delete this or navbar won't work -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+            </button>
+          </section>
+        </div>
+      </article>
+
+      <!-- Projects -->
+      <article class="blog" data-page="projects">
+        <header>
+          <h2 class="h2 article-title" i18n>Major Projects//主要项目</h2>
+        </header>
+        <section class="about-text">
+          <p i18n>
+            Click them and explore more projects included in these major projects.//点击可查看包含在如下主要项目内的更多项目。
+          </p>
+          <p i18n>
+            Comming soon.//过段时间放出来。
+          </p>
+        </section>
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+<!--            <li class="blog-post-item">-->
+<!--              <a href="https://katorly.github.io/blog" target="_blank">-->
+<!--                <figure class="blog-banner-box">-->
+<!--                  <picture>-->
+<!--                    <source type="image/webp" srcset="./assets/img/projects_blog.webp">-->
+<!--                    <source type="image/jpeg" srcset="./assets/img/projects_blog.PNG">-->
+<!--                    <img src="./assets/img/projects_blog.PNG" alt="Katorly Blog" loading="lazy">-->
+<!--                  </picture>-->
+<!--                </figure>-->
+<!--                <div class="blog-content">-->
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category" i18n>Articles//文章</p>-->
+<!--                    <span class="dot"></span>-->
+<!--                    <time datetime="2018-08-08">2018.08.08</time>-->
+<!--                  </div>-->
+<!--                  <h3 class="h3 blog-item-title" i18n>Katorly Blog//Katorly 博客</h3>-->
+<!--                  <p class="blog-text" i18n>-->
+<!--                    My personal blog. Have a look at my articles! Written in zh-CN.//我的博客。欢迎您的来访！-->
+<!--                  </p>-->
+<!--                </div>-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="blog-post-item">-->
+<!--              <a href="https://katorlys.github.io" target="_blank">-->
+<!--                <figure class="blog-banner-box">-->
+<!--                  <picture>-->
+<!--                    <source type="image/webp" srcset="./assets/img/projects_lab.webp">-->
+<!--                    <source type="image/jpeg" srcset="./assets/img/projects_lab.PNG">-->
+<!--                    <img src="./assets/img/projects_lab.PNG" alt="Katorly Lab" loading="lazy">-->
+<!--                  </picture>-->
+<!--                </figure>-->
+<!--                <div class="blog-content">-->
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category" i18n>Codes & Contents//代码、项目</p>-->
+<!--                    <span class="dot"></span>-->
+<!--                    <time datetime="2020-08-21">2020.08.21</time>-->
+<!--                  </div>-->
+<!--                  <h3 class="h3 blog-item-title">Katorly Lab</h3>-->
+<!--                  <p class="blog-text" i18n>-->
+<!--                    Open source projects and samples from Katorly and other partners, aiming to share and improve-->
+<!--                    experience.//来自 Katorly 和小伙伴们的开源项目。-->
+<!--                  </p>-->
+<!--                </div>-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="blog-post-item">-->
+<!--              <a href="#">-->
+<!--                <figure class="blog-banner-box">-->
+<!--                  <picture>-->
+<!--                    <source type="image/webp" srcset="./assets/img/projects_comming.webp">-->
+<!--                    <source type="image/jpeg" srcset="./assets/img/projects_comming.PNG">-->
+<!--                    <img src="./assets/img/projects_comming.PNG" alt="Katorly Lab" loading="lazy">-->
+<!--                  </picture>-->
+<!--                </figure>-->
+<!--                <div class="blog-content">-->
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category" i18n>Future//未来</p>-->
+<!--                    <span class="dot"></span>-->
+<!--                    <time datetime="2020-08-21">20??.??.??</time>-->
+<!--                  </div>-->
+<!--                  <h3 class="h3 blog-item-title" i18n>Coming Soon//开发中......</h3>-->
+<!--                  <p class="blog-text" i18n>-->
+<!--                    To be continued... Stay tuned!//即将到来，敬请期待！-->
+<!--                  </p>-->
+<!--                </div>-->
+<!--              </a>-->
+<!--            </li>-->
+          </ul>
+        </section>
+      </article>
+
+      <!-- Photos -->
+      <article class="portfolio" data-page="photos">
+        <header>
+          <h2 class="h2 article-title" i18n>Photo Album//精选图集</h2>
+        </header>
+        <section class="about-text">
+          <p i18n>
+            In real life, I'm a non-professional photographer. I take my camera wherever I go, and record the exciting
+            moments of life. Can't wait to share some of them!//我喜欢拍照。我随身携带相机，并记录美好时光。
+          </p>
+        </section>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Landscape</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Items</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Moments</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value i18n>Select category//选择分类</div>
+              <div class="select-icon">
+                <i class="bi bi-chevron-down"></i>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Landscape</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Items</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Moments</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+<!--            <li class="project-item active" data-filter-item data-category="landscape">-->
+<!--              <a data-fslightbox href="https://cdn.jsdelivr.net/gh/katorly/Gallery001/photo_album/octohbay.png">-->
+<!--                <figure class="project-img">-->
+<!--                  <div class="project-item-icon-box">-->
+<!--                    <i class="bi bi-zoom-in"></i>-->
+<!--                  </div>-->
+<!--                  <img src="https://cdn.jsdelivr.net/gh/katorly/Gallery001/photo_album/octohbay.png" alt="Octohbay"-->
+<!--                    loading="lazy">-->
+<!--                </figure>-->
+<!--                <h3 class="project-title" i18n>Octohbay//欢乐港湾</h3>-->
+<!--                <p class="project-category" i18n>Landscape//风景</p>-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="project-item active" data-filter-item data-category="items">-->
+<!--              <a data-fslightbox href="https://cdn.jsdelivr.net/gh/katorly/Gallery001/photo_album/garage_kits.png">-->
+<!--                <figure class="project-img">-->
+<!--                  <div class="project-item-icon-box">-->
+<!--                    <i class="bi bi-zoom-in"></i>-->
+<!--                  </div>-->
+<!--                  <img src="https://cdn.jsdelivr.net/gh/katorly/Gallery001/photo_album/garage_kits.png"-->
+<!--                    alt="Garage Kits" loading="lazy">-->
+<!--                </figure>-->
+<!--                <h3 class="project-title" i18n>Garage Kits//手办</h3>-->
+<!--                <p class="project-category" i18n>Items//物件</p>-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="project-item active" data-filter-item data-category="moments">-->
+<!--              <a data-fslightbox-->
+<!--                href="https://cdn.jsdelivr.net/gh/katorly/Gallery001/photo_album/sunflower_with_bees.png">-->
+<!--                <figure class="project-img">-->
+<!--                  <div class="project-item-icon-box">-->
+<!--                    <i class="bi bi-zoom-in"></i>-->
+<!--                  </div>-->
+<!--                  <img src="https://cdn.jsdelivr.net/gh/katorly/Gallery001/photo_album/sunflower_with_bees.png"-->
+<!--                    alt="Sunflower" loading="lazy">-->
+<!--                </figure>-->
+<!--                <h3 class="project-title" i18n>Sunflower//向日葵</h3>-->
+<!--                <p class="project-category" i18n>Moments//瞬间</p>-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="project-item active" data-filter-item data-category="moments">-->
+<!--              <a data-fslightbox href="https://cdn.jsdelivr.net/gh/katorly/Gallery001/photo_album/horse.png">-->
+<!--                <figure class="project-img">-->
+<!--                  <div class="project-item-icon-box">-->
+<!--                    <i class="bi bi-zoom-in"></i>-->
+<!--                  </div>-->
+<!--                  <img src="https://cdn.jsdelivr.net/gh/katorly/Gallery001/photo_album/horse.png" alt="Horse"-->
+<!--                    loading="lazy">-->
+<!--                </figure>-->
+<!--                <h3 class="project-title" i18n>Horse//马</h3>-->
+<!--                <p class="project-category" i18n>Moments//瞬间</p>-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="project-item active" data-filter-item data-category="items">-->
+<!--              <a data-fslightbox href="https://cdn.jsdelivr.net/gh/katorly/Gallery001/photo_album/telescope.png">-->
+<!--                <figure class="project-img">-->
+<!--                  <div class="project-item-icon-box">-->
+<!--                    <i class="bi bi-zoom-in"></i>-->
+<!--                  </div>-->
+<!--                  <img src="https://cdn.jsdelivr.net/gh/katorly/Gallery001/photo_album/telescope.png" alt="Telescope"-->
+<!--                    loading="lazy">-->
+<!--                </figure>-->
+<!--                <h3 class="project-title" i18n>Telescope//望远镜</h3>-->
+<!--                <p class="project-category" i18n>Items//物件</p>-->
+<!--              </a>-->
+<!--            </li>-->
+          </ul>
+        </section>
+      </article>
     </div>
+  </main>
 
-    <!-- aplayer -->
-    <div id="aplayer-fixed" class="aplayer"></div>
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./static/APlayer-1.10.1/dist/APlayer.min.js"></script>
-    <script src="./static/Meting.min.js"></script>
-    <!-- end_aplayer -->
-    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="./static/layer-v3.5.1/layer/layer.js"></script>
+  <!-- JS -->
+  <script src="./assets/js/script.js""></script>
+  <script src=" ./assets/js/fslightbox.min.js"></script>
+  <script src="./assets/js/dom-i18n.min.js"></script>
+  <script>
+    window.onload = function () {
+      if (navigator.language === 'zh-CN') {
+        document.querySelector("togglelang").classList.add('zh-CN');
+      }
+    }
 
-    <script src="./static/main.js"></script>
+    var i18n = window.domI18n({
+      selector: '[i18n]',
+      separator: '//',
+      languages: ['en', 'zh-CN'],
+      defaultLanguage: 'en'
+    });
+
+    const togglelang = document.querySelector("togglelang");
+    const classes = togglelang.classList;
+    togglelang.onclick = function (e) {
+      if (!classes.contains('zh-CN')) {
+        i18n.changeLanguage('zh-CN');
+        classes.add('zh-CN');
+      } else {
+        i18n.changeLanguage('en');
+        classes.remove('zh-CN');
+      }
+      e.preventDefault();
+    };
+  </script>
+</body>
 
 </html>

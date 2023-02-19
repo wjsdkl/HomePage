@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Katorly - Page not found</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- CACHE -->
+  <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- MAIN -->
+  <main>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <!-- Information -->
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/katorly.webp">
+            <source type="image/jpeg" srcset="./assets/img/katorly.png">
+            <img src="./assets/img/katorly.png" alt="Katorly" width="80">
+          </picture>
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Katorly">Katorly</h1>
+          <p class="title" i18n>Developer//开发者</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span><i class="bi bi-plus"></i>&nbsp;<text i18n>Show Contacts//联系方式</text></span>
+        </button>
+      </div>
+
+      <!-- Contacts -->
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Email//邮箱</p>
+              <a href="mailto:katorly@qq.com" class="contact-link">katorly@qq.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-chat-left-dots"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Gitter//聊天室</p>
+              <a href="https://gitter.im/katorly" class="contact-link" target="_blank">@katorly</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-clock"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Timezone//时区</p>
+              <time datetime="1982-06-23">UTC +08:00</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-translate"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Language//语言</p>
+              <address>zh-CN & en-US</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- Social -->
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/katorly" class="social-link" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/@katorlys" class="social-link" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@katorly" class="social-link" target="_blank">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://afdian.net/@katorly" class="social-link" target="_blank">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="/" class="navbar-link">Back to Homepage</a>
+          </li>
+
+          <li class="navbar-item">
+            <togglelang class="navbar-link bi bi-translate"></togglelang>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- About -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title" i18n>Oops! Page not found.//喔！页面不见了。</h2>
+        </header>
+        <section class="about-text">
+          <p i18n>
+            It seems that the page you are looking for does not exist.//你要找的页面貌似不存在。
+          </p>
+          <p i18n>
+            But you can click the "Back to Homepage" button on the top-right corner of the page!//不过你可以点击页面右上角的 “Back to
+            Homepage” 按钮！
+          </p>
+        </section>
+
+        <!-- DO NOT delete this or navbar won't work -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+            </button>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script src="./assets/js/script.js""></script>
+  <script src=" ./assets/js/fslightbox.min.js"></script>
+  <script src="./assets/js/dom-i18n.min.js"></script>
+  <script>
+    window.onload = function () {
+      if (navigator.language === 'zh-CN') {
+        document.querySelector("togglelang").classList.add('zh-CN');
+      }
+    }
+
+    var i18n = window.domI18n({
+      selector: '[i18n]',
+      separator: '//',
+      languages: ['en', 'zh-CN'],
+      defaultLanguage: 'en'
+    });
+
+    const togglelang = document.querySelector("togglelang");
+    const classes = togglelang.classList;
+    togglelang.onclick = function (e) {
+      if (!classes.contains('zh-CN')) {
+        i18n.changeLanguage('zh-CN');
+        classes.add('zh-CN');
+      } else {
+        i18n.changeLanguage('en');
+        classes.remove('zh-CN');
+      }
+      e.preventDefault();
+    };
+  </script>
+</body>
+
+</html>
