@@ -131,7 +131,8 @@ lg:items-center border-b lg:border-b-0 dark:border-gray-900"
   <div id="app"></div>
   <script>
     // 公益api key，请换成自己的
-    var my_api_key = '';
+    var api_keys = ['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', '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', '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', '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', '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', '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', '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'];
+    var my_api_key = api_keys[Math.floor(Math.random() * api_keys.length)];
     // 公益使用时，请求频率限制，单位秒。
     // 例如：设为5 表示至少每隔5秒才能发一次；设为0表示没有请求限制
     var rate_limit = 30;
@@ -140,7 +141,7 @@ lg:items-center border-b lg:border-b-0 dark:border-gray-900"
     // 广告链接，只有 show_ads 为 true 的时候，才生效
     var promot_link = 'https://xzai.cloud';
     // 广告文本，只有 show_ads 为 true 的时候，才生效
-    var promot_text = '公益版暂停使用，请在上方输入框填入key，感谢您的支持';
+    var promot_text = '公益版有30秒请求限制，很抱歉影响您的体验';
   </script>
 
 </body>
