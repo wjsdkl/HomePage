@@ -1,4 +1,4 @@
-import simphi from './js/simphi.js';
+import simphi from '/js/simphi.js';
 import { audio } from './utils/aup.js';
 import { full, Timer, getConstructorName, urls, isUndefined, loadJS, frameTimer, time2Str, orientation, FrameAnimater } from './js/common.js';
 import { uploader, ZipReader, readFile } from './js/reader.js';
