@@ -1,0 +1,52 @@
+#stage {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin: auto;
+	line-height: 0;
+}
+
+#stage i {
+	font-family: icomoon;
+	font-style: normal;
+	color: #fff;
+	font-size: 4vmin;
+	pointer-events: none;
+	opacity: 0.6;
+	line-height: initial;
+}
+
+#stage i.tl {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#stage i.tr {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#stage i.bl {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#stage i.br {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#mask {
+	color: gray;
+	font-family: Custom, Consolas, Menlo, monospace;
+	font-size: 4vmin;
+	position: absolute;
+	width: 70vmin;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	line-height: 1.5em;
+}
