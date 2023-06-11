@@ -79,7 +79,7 @@ h4 {
 }
 
 .my-card {
-    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    box-shadow: 0px 5px 15px 5px rgb(203, 221, 232);
 }
 
 strike {
@@ -87,41 +87,11 @@ strike {
 }
 
 .btn {
-    border-radius: 0;
+    border-radius: 5;
     margin: 5px 0;
     width: 100%;
-    padding: 12px 40px;
+    padding: 10px 0px;
     transition: ease;
-}
-
-.btn-primary {
-    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
-    padding: 12px 40px;
-    transition: ease;
-}
-
-.btn-primary:hover {
-    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
-}
-
-.btn-secondary {
-    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
-    padding: 12px 40px;
-    transition: ease;
-}
-
-.btn-secondary:hover {
-    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
-}
-
-.btn-success {
-    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
-    padding: 12px 40px;
-    transition: ease;
-}
-
-.btn-success:hover {
-    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
 }
 
 .social {
@@ -148,7 +118,6 @@ strike {
 
 .photo-bg {
     /* background-image: url(assets/background.jpg); */
-    background-image: url(https://bing.img.run/1920x1080.php);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -156,11 +125,6 @@ strike {
 
 footer p {
     font-size: 12px;
-}
-
-#kaygb-blog-a,
-#kaygb-mail-a {
-    display: none;
 }
 
 @media (max-width: 1199px) {

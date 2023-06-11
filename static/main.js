@@ -38,12 +38,12 @@ $('.kz-nav-btn').on('click', function() {
 
 console.log(
     "\n" +
-      " %c KZHomePage v1.2.0 by kaygb " +
-      " %c https://blog.170601.xyz/archives/25.html " +
+      " %c 鸡你太美" +
+      " %c 迎面走来的你让我如此蠢蠢欲动 " +
       "\n" +
       "\n",
     "color: #fff; background: #fd79a8; padding:5px 0;",
-    "background: #FFF; padding:5px 0;"
+    "color: #fff; background: #66ccff; padding:5px 0;"
   );
 // 兼容旧版
 if(meting_music_api===""){
