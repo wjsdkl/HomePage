@@ -36,8 +36,6 @@
                     <el-link type="primary" :underline="false" href="//beian.miit.gov.cn/" target="_blank">
                         蜀ICP备2022010825号-1
                     </el-link>
-                    &boxv;
-                    <el-link type="primary" :underline="false" onclick="var vConsole = new window.VConsole();">vConsole</el-link>
                 </el-text>
             </div>
         </el-card>
@@ -80,6 +78,7 @@
 * {
   font-family:"Noto Sans SC";
   text-decoration: none;
+  overflow: hidden;
 }
 .el-link {
   margin-top: -4px;
