@@ -8,7 +8,7 @@
                 </div>
             </template>
             <div>
-                <el-image src="/index.webp"/>
+                <el-image src="./src/assets/index.webp"/>
                 <p>欢迎来到我的个人网站！我是一名专注于软件开发和编程的程序员。我热爱技术，对于最新的编程语言和技术有着浓厚的兴趣。</p>
                 <p><a id="hitokoto">
                     <el-icon class="is-loading">
