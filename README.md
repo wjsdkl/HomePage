@@ -21,3 +21,7 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## 许可证
+
+主播看清楚了，是MIT
