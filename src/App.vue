@@ -34,7 +34,7 @@
                 <p>友链（欢迎提交，本站流量很高的）</p>
                 <el-link type="primary" :underline="false" href="//www.wsmcs.top" target="_blank">WSMCS服务器</el-link>
                 &boxv;
-                <el-link type="primary" :underline="false" href="//fuibafuyu.net/" target="_blank">冬優ちゃんの小窝</el-link>
+                <el-link type="primary" :underline="false" href="//fuibafuyu.net" target="_blank">冬優ちゃんの小窝</el-link>
                 <el-divider/>
                 <el-text>Create by <el-icon><ElementPlus/></el-icon> Xzai&boxv;<el-link type="primary" :underline="false" href="//beian.miit.gov.cn" target="_blank">蜀ICP备2022010825号-1</el-link></el-text>
             </div>
