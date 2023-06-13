@@ -4,7 +4,7 @@
             <template #header>
                 <div class="card-header">
                     <b>Xzaiの个人主页</b>
-                    <el-button tag="a" href="//b8y.shop" target="_blank">我的爱发电（有好东西）</el-button>
+                    <el-button tag="a" href="//b8y.shop" target="_blank">求赞助</el-button>
                 </div>
             </template>
             <div>
