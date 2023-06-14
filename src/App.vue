@@ -8,8 +8,9 @@
                 </div>
             </template>
             <div>
+                <!--主要内容-->
                 <el-image src="./index.webp"/>
-                <p>欢迎来到我的个人网站！我是一名专注于软件开发和编程的程序员。我热爱技术，对于最新的编程语言和技术有着浓厚的兴趣。</p>
+                <p i18n>欢迎来到我的个人网站！我是一名专注于软件开发和编程的程序员。我热爱技术，对于最新的编程语言和技术有着浓厚的兴趣。</p>
                 <p><a id="hitokoto">
                     <el-icon class="is-loading">
                         <Loading/>
@@ -37,6 +38,7 @@
                 <el-link type="primary" :underline="false" href="//fuibafuyu.net" target="_blank">冬優ちゃんの小窝</el-link>
                 <el-divider/>
                 <el-text>Create by <el-icon><ElementPlus/></el-icon> Xzai&boxv;<el-link type="primary" :underline="false" href="//beian.miit.gov.cn" target="_blank">蜀ICP备2022010825号-1</el-link></el-text>
+                <!--主要内容-->
             </div>
         </el-card>
     </el-main>
