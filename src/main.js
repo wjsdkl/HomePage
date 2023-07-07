@@ -16,10 +16,10 @@ app.mount('#app')
 console.log(
       "\n" +
       "%c 项目地址" +
-      " %c https://github.com/XzaiCloud/HomePage " +
+      " %c https://github.com/wjsdkl/HomePage " +
       "\n" +
-      "%c 鸡你太美" +
-      " %c 迎面走来的你让我如此蠢蠢欲动 "+
+      "%c xiao_duan" +
+      " %c 要保持希望在每天清晨太阳升起 "+
       "\n",
     "color: #fff; background: #fd79a8; padding:5px 0;",
     "color: #fff; background: #66ccff; padding:5px 0;",

@@ -4,13 +4,13 @@
             <template #header>
                 <div class="card-header">
                     <b>Xzaiの个人主页</b>
-                    <el-button tag="a" href="//b8y.shop" target="_blank">求赞助</el-button>
+                    <el-button tag="a" href="./wxpay.jpg" target="_blank">赞助</el-button>
                 </div>
             </template>
             <div>
                 <!--主要内容-->
                 <el-image src="./index.webp"/>
-                <p>欢迎来到我的个人网站！我是一名专注于软件开发和编程的程序员。我热爱技术，对于最新的编程语言和技术有着浓厚的兴趣。</p>
+                <p>欢迎来到我的个人网站！我是一名专注于系统封装重装、软件编程制作的程序员。</p>
                 <p><a id="hitokoto">
                     <el-icon class="is-loading">
                         <Loading/>
@@ -19,25 +19,30 @@
                 <el-divider/>
                 <p>我的项目</p>
                 <div class="btn-group">
-                    <el-button tag="a" href="//b8y.chat" target="_blank">免费GPT</el-button>
-                    <el-button tag="a" href="//violet.wiki" target="_blank">VioletWiki</el-button>
-                    <el-button tag="a" href="//iqboost.icu" target="_blank">IQBoost</el-button>
-                    <el-button tag="a" href="//原批.icu" target="_blank">原批语录</el-button>
-                    <el-button tag="a" href="//2b2t.games" target="_blank">MC服务器</el-button>
+                    <el-button tag="a" href="https://www.yrxitong.com/" target="_blank">小鱼儿yr系统</el-button>
+                    <el-button tag="a" href="https://www.123pan.com/s/6y1UVv-cSnGH.html" target="_blank">微软账户自动注册</el-button>
+                    <el-button tag="a" href="https://yrxitong6-my.sharepoint.cn/:f:/g/personal/yrxitong_com_yrxitong_com/EgXdZaXnGkJKg-o4hZWjRIwBJIBRd80MWHaK_nKCrkDKZw" target="_blank">系统下载</el-button>
+                    <el-button tag="a" href="https://mcarc.gitee.io/" target="_blank">Minecraft下载</el-button>
                 </div>
                 <el-divider/>
-                <p>联系我</p>
+                <p>联系方式</p>
                 <div class="btn-group">
-                    <el-button tag="a" href="//wpa.qq.com/msgrd?v=3&uin=2744601427&site=qq&menu=yes" target="_blank">QQ</el-button>
-                    <el-button tag="a" href="//telegram.me/Xzai0313" target="_blank">Telegram</el-button>
+                    <el-button tag="a" href="https://qm.qq.com/q/EljSfThmQa&personal_qrcode_source=3" target="_blank">QQ</el-button>
+                    <el-button tag="a" href="./wxqrcode.png" target="_blank">微信</el-button>
                 </div>
                 <el-divider/>
-                <p>友链（欢迎提交，本站流量很高的）</p>
-                <el-link type="primary" :underline="false" href="//www.wsmcs.top" target="_blank">WSMCS服务器</el-link>
+                <p>友链</p>
+                <el-link type="primary" :underline="false" href="https://www.google.com/" target="_blank">Google</el-link>
                 &boxv;
-                <el-link type="primary" :underline="false" href="//fuibafuyu.net" target="_blank">冬優ちゃんの小窝</el-link>
+                <el-link type="primary" :underline="false" href="https://www.baidu.com/" target="_blank">百度</el-link>
+                &boxv;
+                <el-link type="primary" :underline="false" href="https://www.itsk.com/" target="_blank">IT天空</el-link>
+                &boxv;
+                <el-link type="primary" :underline="false" href="https://www.upe.net/" target="_blank">优启通</el-link>
+                &boxv;
+                <el-link type="primary" :underline="false" href="https://www.puresys.net/" target="_blank">Puresys</el-link>
                 <el-divider/>
-                <el-text>Create by <el-icon><ElementPlus/></el-icon> <el-link :underline="false" href="//b8y.top" target="_blank">Xzai</el-link>&boxv;<el-link type="primary" :underline="false" href="//beian.miit.gov.cn" target="_blank">蜀ICP备2022010825号-1</el-link></el-text>
+                <el-text>Create by <el-icon><ElementPlus/></el-icon> <el-link :underline="false" href="//xiaoduan.icu" target="_blank">xiao_duan</el-link></el-text>
                 <!--主要内容-->
             </div>
         </el-card>
