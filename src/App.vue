@@ -11,6 +11,7 @@
                 <!--主要内容-->
                 <el-image src="./index.webp"/>
                 <p>欢迎来到我的个人网站！我是一名专注于系统封装重装、软件编程制作的程序员。</p>
+                <p>刚上高中，学业繁忙</p>
                 <p><a id="hitokoto">
                     <el-icon class="is-loading">
                         <Loading/>
