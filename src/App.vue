@@ -3,7 +3,7 @@
         <el-card class="box-card">
             <template #header>
                 <div class="card-header">
-                    <b>Xzaiの个人主页</b>
+                    <b>xiao_duanの个人主页</b>
                     <el-button tag="a" href="./wxpay.jpg" target="_blank">赞助</el-button>
                 </div>
             </template>
