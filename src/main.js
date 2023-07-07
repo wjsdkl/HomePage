@@ -19,7 +19,7 @@ console.log(
       " %c https://github.com/wjsdkl/HomePage " +
       "\n" +
       "%c xiao_duan" +
-      " %c 要保持希望在每天清晨太阳升起 "+
+      " %c 落霞与孤鹜齐飞，秋水共长天一色。 "+
       "\n",
     "color: #fff; background: #fd79a8; padding:5px 0;",
     "color: #fff; background: #66ccff; padding:5px 0;",

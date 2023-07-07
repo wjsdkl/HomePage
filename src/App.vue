@@ -19,6 +19,7 @@
                 <el-divider/>
                 <p>我的项目</p>
                 <div class="btn-group">
+                    <el-button tag="a" href="https://gpt.xiaoduan.icu/" target="_blank">ChatGPT</el-button>
                     <el-button tag="a" href="https://www.yrxitong.com/" target="_blank">小鱼儿yr系统</el-button>
                     <el-button tag="a" href="https://www.123pan.com/s/6y1UVv-cSnGH.html" target="_blank">微软账户自动注册</el-button>
                     <el-button tag="a" href="https://yrxitong6-my.sharepoint.cn/:f:/g/personal/yrxitong_com_yrxitong_com/EgXdZaXnGkJKg-o4hZWjRIwBJIBRd80MWHaK_nKCrkDKZw" target="_blank">系统下载</el-button>
